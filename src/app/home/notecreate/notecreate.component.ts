@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './notecreate.component.html',
   styleUrl: './notecreate.component.css'
 })
+
 export class NotecreateComponent {
   title: string="";
   content: string="";

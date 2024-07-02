@@ -15,12 +15,9 @@ import { NoteeditComponent } from '../noteedit/noteedit.component';
     CommonModule,NotelistComponent
   ]
 })
-export class HomeModule { 
+export class HomeModule {
 
 }
-const routes: Routes = [
-  { path: 'create', component: NotecreateComponent },
-  { path: 'list', component: NotelistComponent },
-  {path:"edit",component:NoteeditComponent},
-  // { path: '', redirectTo: '/page1', pathMatch: 'full' }
-];
+
+
+
