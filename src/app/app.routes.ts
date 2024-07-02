@@ -1,7 +1,8 @@
 import { Routes } from '@angular/router';
-import { NotecreateComponent } from './home/notecreate/NotecreateComponent';
+import { NotecreateComponent } from './home/notecreate/notecreate.component';
 import { HomeComponent } from './home/home/home.component';
 
 export const routes: Routes = [
-    {path:"app-home",component:HomeComponent}
+    {path:"",component:HomeComponent},
+    {path:"create",component:NotecreateComponent}
 ];
