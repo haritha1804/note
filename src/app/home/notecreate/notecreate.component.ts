@@ -4,7 +4,11 @@ import { NotelistComponent } from '../notelist/notelist.component';
 import { FormBuilder, FormGroup, FormsModule } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+<<<<<<< HEAD
 import { MyService } from '../../data.service';
+=======
+
+>>>>>>> 85d9a8ad8f38487b9102b36167493b873174fe51
 @Component({
   selector: 'app-notecreate',
   standalone: true,
@@ -12,6 +16,7 @@ import { MyService } from '../../data.service';
   templateUrl: './notecreate.component.html',
   styleUrl: './notecreate.component.css'
 })
+<<<<<<< HEAD
 // export class NotecreateComponent {
 
 //   @Output() newItemEvent = new EventEmitter<string>();
@@ -60,3 +65,20 @@ export class NotecreateComponent {
   //   this.content = '';
   // }
 // }
+=======
+
+export class NotecreateComponent {
+  title: string="";
+  content: string="";
+  notes: { title: string, content: string }[] = [];
+
+  onSubmit() {
+    const newNote = { title: this.title, content: this.content };
+    this.notes.push(newNote);
+    console.log('Notes:', this.notes);
+    // Clear the form fields after submission
+    this.title = '';
+    this.content = '';
+  }
+}
+>>>>>>> 85d9a8ad8f38487b9102b36167493b873174fe51

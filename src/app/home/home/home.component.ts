@@ -1,8 +1,12 @@
 import { Component } from '@angular/core';
 import path from 'path';
+<<<<<<< HEAD
 import { NotecreateComponent } from '../notecreate/notecreate.component';
+=======
+>>>>>>> 85d9a8ad8f38487b9102b36167493b873174fe51
 import { Router, Routes } from '@angular/router';
 import { NotelistComponent } from "../notelist/notelist.component";
+import { NotecreateComponent } from '../notecreate/notecreate.component';
 
 @Component({
     selector: 'app-home',

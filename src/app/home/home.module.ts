@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { NotelistComponent } from './notelist/notelist.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NoteeditComponent } from '../noteedit/noteedit.component';
+<<<<<<< HEAD
 const admin: Routes = [
   {path:'',component:HomeComponent},
   { path: 'create', component: NotecreateComponent },
@@ -20,3 +21,21 @@ const admin: Routes = [
 export class HomeModule { 
 static routes= admin;
 }
+=======
+
+
+
+@NgModule({
+  declarations: [
+   ],
+  imports: [
+    CommonModule,NotelistComponent
+  ]
+})
+export class HomeModule {
+
+}
+
+
+
+>>>>>>> 85d9a8ad8f38487b9102b36167493b873174fe51
