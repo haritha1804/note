@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { NotecreateComponent } from './home/notecreate/NotecreateComponent';
 import { HomeComponent } from './home/home/home.component';
+import { HomeModule } from './home/home.module';
 
 export const routes: Routes = [
-    {path:"app-home",component:HomeComponent}
+    {path:"",children:[...HomeModule.routes]}
 ];

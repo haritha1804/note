@@ -1,5 +1,18 @@
-<p>note create</p>
-<!-- <form (ngSubmit)="onSubmit()">
+<div>
+  <h2>Data:</h2>
+  <ul>
+    <li *ngFor="let item of data">{{item}}</li>
+    <li *ngFor="let item of title">{{item}}</li>
+  </ul>
+  <label for="item-input">Add an item:</label>
+<input type="text" id="item-input" #newItem>
+<label for="item-input">Add an title:</label>
+<input type="text" id="item-input" #newItem>
+<a href="/list"><button class="btn btn-success pull-right" (click)="addItem()">Add</button></a>
+  
+</div>
+<!-- 
+<form (ngSubmit)="onSubmit()">
     <div>
       <label for="title">Title:</label>
       <input type="text" id="title" [(ngModel)]="title" name="title" required>
@@ -16,3 +29,4 @@
     <p>{{ note.content }}</p>
   </div>
    -->
+   

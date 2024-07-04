@@ -1,26 +1,22 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NotecreateComponent } from './notecreate/notecreate.component';
+import { NotecreateComponent } from './notecreate/NotecreateComponent';
 import { HomeComponent } from './home/home.component';
 import { NotelistComponent } from './notelist/notelist.component';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { NoteeditComponent } from '../noteedit/noteedit.component';
-
-
-
-@NgModule({
-  declarations: [
-   ],
-  imports: [
-    CommonModule,NotelistComponent
-  ]
-})
-export class HomeModule { 
-
-}
-const routes: Routes = [
+const admin: Routes = [
+  {path:'',component:HomeComponent},
   { path: 'create', component: NotecreateComponent },
   { path: 'list', component: NotelistComponent },
   {path:"edit",component:NoteeditComponent},
-  // { path: '', redirectTo: '/page1', pathMatch: 'full' }
+  { path: '', redirectTo: '', pathMatch: 'full' }
 ];
+@NgModule({
+  imports: 
+   [ RouterModule.forRoot(admin)],
+  exports:[RouterModule]
+})
+export class HomeModule { 
+static routes= admin;
+}
