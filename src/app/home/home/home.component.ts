@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import path from 'path';
-import { NotecreateComponent } from '../notecreate/NotecreateComponent';
+import { NotecreateComponent } from '../notecreate/notecreate.component';
 import { Router, Routes } from '@angular/router';
 import { NotelistComponent } from "../notelist/notelist.component";
 

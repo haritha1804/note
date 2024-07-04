@@ -1,6 +1,6 @@
 import { Component, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NotecreateComponent } from './notecreate/NotecreateComponent';
+import { NotecreateComponent } from './notecreate/notecreate.component';
 import { HomeComponent } from './home/home.component';
 import { NotelistComponent } from './notelist/notelist.component';
 import { RouterModule, Routes } from '@angular/router';
